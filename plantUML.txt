@@ -1,0 +1,22 @@
+@startuml
+Agent "many" --* "1" Team:team
+
+class Agent {
+ "firstName" : * String
+ "lastName" : * String
+ "email" : EmailAddress
+ "phone" : PhoneNumber
+ "title" : MultilingualEnum
+ "availability" : MultilingualEnum
+}
+
+class Team {
+ "firstName" : * String
+ "lastName" : * String
+ "email" : EmailAddress
+ "phone" : PhoneNumber
+ "title" : MultilingualEnum
+ "availability" : MultilingualEnum
+}
+
+@enduml

@@ -1,0 +1,20 @@
+@startuml
+class Team {
+  e74d6b3f-2be2-42ff-a7cd-96fa41b32439 : sysId
+ "firstName" : name
+ "String" : type
+ "lastName" : name
+ "String" : type
+ "email" : name
+ "EmailAddress" : type
+ "phone" : name
+ "PhoneNumber" : type
+ "title" : name
+ "MultilingualEnum" : type
+ "team" : name
+ "Association" : type
+ "availability" : name
+ "MultilingualEnum" : type
+}
+
+@enduml
