@@ -48,7 +48,6 @@ public class Library {
 			    nameOfClass = objectNode.path("name").asText();
 			    System.out.println(nameOfClass);
 			    classDescriptions.put(nameOfClass, objectNode);
-			    //System.out.println(validateAssociations(objectNode, classDescriptions));
 			  
 			   }
 			}
@@ -66,8 +65,6 @@ public class Library {
 			}
 		
 		createPlantUMLFile(classDescriptions);
-		
-		//createPlantUMLFile(nameOfClass,objectNode);
 
 		 }
 	
