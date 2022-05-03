@@ -6,7 +6,7 @@
     "de": "Agent"
   },
   "populatedBySysUser": {
-    "createForUserHavingAtLeastOneRole" : ["Agent"],
+    "createForUserHavingAtLeastOneRole" : ["AgentRole"],
     "fieldsMapping": {
       "firstName": "firstName",
       "lastName": "lastName",

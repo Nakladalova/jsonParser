@@ -1,0 +1,128 @@
+{
+  "sysId": "1ae8fb5b-f3bc-4b93-ab93-3eecca431724",
+  "name": "Query",
+  "title": {
+    "en": "Query"
+  },
+  "fields": [
+    {
+      "name": "subject",
+      "title": {
+        "en": "Subject"
+      },
+      "type": "String",
+      "length": 200,
+      "mandatory": false
+    },
+    {
+      "name": "description",
+      "title": {
+        "en": "Description"
+      },
+      "type": "RichText",
+      "mandatory": true
+    },
+    {
+      "name": "email",
+      "title": {
+        "en": "Email"
+      },
+      "type": "EmailAddress",
+      "mandatory": false
+    },
+    {
+      "name": "phone",
+      "title": {
+        "en": "Phone"
+      },
+      "type": "PhoneNumber",
+      "length": 15,
+      "mandatory": false
+    },
+    {
+      "name": "whenPosted",
+      "title":  {
+        "en": "When posted"
+      },
+      "type": "Instant",
+      "mandatory": false
+    },
+    {
+      "name": "reasonWhyInvalid",
+      "title": {
+        "en": "Reason why invalid"
+      },
+      "type": "RichText",
+      "mandatory": false
+    },
+    {
+      "name": "status",
+      "title": {
+        "en": "Status"
+      },
+      "type": "MultilingualEnum",
+      "values": [
+        {
+          "name": "INITIAL",
+          "title": {
+            "en": "Initial"
+          }
+        },
+        {
+          "name": "VALID",
+          "title": {
+            "en": "Valid"
+          }
+        },
+        {
+          "name": "INVALID",
+          "title": {
+            "en": "Invalid"
+          }
+        },
+        {
+          "name": "CASED",
+          "title": {
+            "en": "Cased"
+          }
+        }
+      ]
+    },
+    {
+      "name": "postedByUser",
+      "title": {
+        "en": "Posted by"
+      },
+      "type": "Association",
+      "referencedEntity": "User",
+      "mandatory": false
+    },
+    {
+      "name": "validatedByAgent",
+      "title": {
+        "en": "Validated by"
+      },
+      "type": "Association",
+      "referencedEntity": "Agent",
+      "mandatory": false
+    },
+    {
+      "name": "casedByAgent",
+      "title": {
+        "en": "Cased by"
+      },
+      "type": "Association",
+      "referencedEntity": "Agent",
+      "mandatory": false
+    },
+    {
+      "name": "case",
+      "title": {
+        "en": "Case"
+      },
+      "type": "Association", 
+      "referencedEntity": "Case",
+      "mandatory": false 
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "sysId": "39f3ca12-d9d2-4f21-b5de-af957e4d7e2a",
+  "name": "Case",
+  "title": {
+    "en": "Case",
+    "de": "Case - DE"
+  },
+  "fields": [
+    {
+      "name": "subject",
+      "title": {
+        "en": "Subject"
+      },
+      "type": "String",
+      "length": 200,
+      "mandatory": true
+    },
+    {
+      "name": "description",
+      "title": {
+        "en": "Description"
+      },
+      "type": "RichText",
+      "mandatory": true
+    },
+    {
+      "name": "whenCreated",
+      "title":  {
+        "en": "When created"
+      },
+      "type": "Instant",
+      "mandatory": false
+    },
+    {
+      "name": "responsibleAgent",
+      "title": {
+        "en": "Responsible agent"
+      },
+      "type": "Association",
+      "referencedEntity": "Agent",
+      "mandatory": false
+    },
+    {
+      "name": "responsibleTeam",
+      "title": {
+        "en": "Responsible team"
+      },
+      "type": "Association",
+      "referencedEntity": "Team",
+      "mandatory": false
+    },
+    {
+      "name": "solution",
+      "title": {
+        "en": "Solution"
+      },
+      "type": "RichText",
+      "mandatory": false
+    }
+  ]
+}

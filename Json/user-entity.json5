@@ -1,255 +1,119 @@
 {
-
-  "sysId": "e74d6b3f-2be2-42ff-a7cd-96fa41b32439",
-
-  "name": "Team",
-
+  "sysId": "8378b0e0-8923-11ec-a8a3-0242ac120002",
+  "name": "User",
   "title": {
-
-    "en": "Agent",
-
-    "de": "Agent"
-
+    "en": "User"
   },
-
-  "populatedBySysUser": {
-
-    "createForUserHavingAtLeastOneRole" : ["Agent"],
-
-    "fieldsMapping": {
-
-      "firstName": "firstName",
-
-      "lastName": "lastName",
-
-      "email": "email"
-
-    }
-
-  },
-
   "fields": [
-
     {
-
       "name": "firstName",
-
       "title": {
-
         "en": "First name",
-
         "de": "Vorname"
-
       },
-
       "type": "String",
-
       "length": 40,
-
       "mandatory": true
-
     },
-
     {
-
       "name": "lastName",
-
       "title": {
-
         "en": "Last name",
-
         "de": "Nachname"
-
       },
-
       "type": "String",
-
       "length": 40,
-
       "mandatory": true
-
     },
-
     {
-
       "name": "email",
-
       "title": {
-
         "en": "Email"
-
       },
-
       "type": "EmailAddress",
-
       "mandatory": false
-
     },
-
     {
-
       "name": "phone",
-
       "title": {
-
         "en": "Phone"
-
       },
-
       "type": "PhoneNumber",
-
-      "length": 15,
-
       "mandatory": false
-
     },
-
     {
-
       "name": "title",
-
       "title": {
-
         "en": "Title",
-
         "de": "Title"
-
       },
-
       "type": "MultilingualEnum",
-
       "defaultValue": "MX",
-
       "values": [
-
         {
-
           "name": "MS",
-
           "title": {
-
             "en": "Ms",
-
             "de": "Frau"
-
           }
-
         },
-
         {
-
           "name": "MR",
-
           "title": {
-
             "en": "Mr",
-
             "de": "Herr"
-
           }
-
         },
-
         {
-
           "name": "MX",
-
           "title": {
-
             "en": "Mx"
-
           }
-
         }
-
       ]
-
     },
-
     {
-
-      "name": "team",
-
+      "name": "role",
       "title": {
-
-        "en": "Team",
-
-        "de": "Team"
-
+        "en": "Role"
       },
-
-      "type": "Association",
-
-      "referencedEntity": "Team",
-
+      "type": "String",
+      "length": 40,
       "mandatory": false
-
     },
-
     {
-
-      "name": "availability",
-
+      "name": "department",
       "title": {
-
-        "en": "Availability",
-
-        "de": "Availability"
-
+        "en": "Department"
       },
-
-      "type": "MultilingualEnum",
-
-      "defaultValue": "OFFLINE",
-
-      "values": [
-
-        {
-
-          "name": "ONLINE",
-
-          "title": {
-
-            "en": "Online",
-
-            "de": "Verfügbar"
-
-          }
-
-        },
-
-        {
-
-          "name": "BUSY",
-
-          "title": {
-
-            "en": "Busy",
-
-            "de": "Beschäftigt"
-
-          }
-
-        },
-
-        {
-
-          "name": "OFFLINE",
-
-          "title": {
-
-            "en": "Offline",
-
-            "de": "Offline"
-
-          }
-
-        }
-
-      ]
-
+      "type": "String",
+      "length": 40,
+      "mandatory": false
+    },
+    {
+      "name": "location",
+      "title": {
+        "en": "Location"
+      },
+      "type": "String",
+      "length": 2000,
+      "mandatory": false
+    },
+    {
+      "name": "businessPhone",
+      "title": {
+        "en": "Business phone"
+      },
+      "type": "PhoneNumber",
+      "mandatory": false
+    },
+    {
+      "name": "mobilePhone",
+      "title": {
+        "en": "Mobile phone"
+      },
+      "type": "PhoneNumber",
+      "mandatory": false
     }
-
   ]
-
 }

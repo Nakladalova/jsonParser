@@ -1,0 +1,37 @@
+{
+  "sysId": "87192ec4-2c77-402a-973a-3dcf629c72d7",
+  "name": "Team",
+  "title": {
+    "en": "Team",
+    "de": "Team"
+  },
+  "fields": [
+    {
+      "name": "name",
+      "title": {
+        "en": "Name",
+        "de": "Name"
+      },
+      "type": "String",
+      "length": 40,
+      "mandatory": true
+    },
+    {
+      "name": "description",
+      "title": {
+        "en": "Description",
+        "de": "Beschreibung"
+      },
+      "type": "Text",
+      "mandatory": false
+    }
+  ],
+  "uniqueConstraints": [
+    {
+      "name": "01",
+      "fieldNames": [
+        "name"
+      ]
+    }
+  ]
+}
